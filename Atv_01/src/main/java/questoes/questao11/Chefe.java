@@ -10,7 +10,7 @@ public class Chefe implements Empregado{
 
     @Override
     public void depositaNaConta() {
-        double valor = this.getSalario() + this.getSalario();
+        double valor = this.getSalario() + this.getExtras();
         String valor_formatado = String.format("%.2f", valor);
         System.out.println("O valor "+ valor_formatado + " R$ foi depositado com sucesso na conta do chefe "+ nome);
     }
